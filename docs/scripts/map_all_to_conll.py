@@ -59,7 +59,7 @@ def check_locations(corpora, pathconfigurations):
 
 if __name__ == "__main__":
     corpora = {}
-    pathconfigurations = json.load(codecs.open("configurations.json",'r','utf-8'))
+    pathconfigurations = json.load(codecs.open("docs\scripts\configurations.json",'r','utf-8'))
     parser = argparse.ArgumentParser()
     parser.add_argument("--ontonotes", help="Location of extracted ontonotes 5.0", default=False)
     parser.add_argument("--ewt", help="Location of extracted English Web Treebank top directory (LDC2012T13", default=False)
